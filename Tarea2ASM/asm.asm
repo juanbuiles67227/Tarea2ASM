@@ -8,11 +8,8 @@
 Area proc
 	push ebp
 	mov ebp, esp
-
-	mov eax, [ebp+8]
 	cdq
 	idiv dos
-	
 	mov edx,eax
 	imul eax, edx 
 	imul eax, pi 
