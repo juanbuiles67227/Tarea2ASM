@@ -13,7 +13,6 @@ Area proc
 	mov edx,eax
 	imul eax, edx 
 	imul eax, pi 
-	mov [ebp+12], edx
 	pop ebp
 	ret 
 Area endp
@@ -21,6 +20,8 @@ Area endp
 Radio proc
 	push ebp
 	mov ebp, esp
+	cdq
+	idiv dos
 	pop ebp
 	ret 
 Radio endp
